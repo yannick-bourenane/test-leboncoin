@@ -1,14 +1,23 @@
 import React from "react";
-import { Menu } from "react-bulma-components";
+import { Navbar } from "react-bulma-components/";
+import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 const Nav = () => {
   return (
-    <Menu>
-      <Menu.List title="Main">
-        <Menu.List.Item>Liste des messages</Menu.List.Item>
-        <Menu.List.Item>Ajouter un message</Menu.List.Item>
-      </Menu.List>
-    </Menu>
+    <Navbar>
+      <Navbar.Brand>
+        <Navbar.Item>
+          <Logo />
+        </Navbar.Item>
+        <Navbar.Item>
+          <NavLink to="/">Liste des messages</NavLink>
+        </Navbar.Item>
+        <Navbar.Item>
+          <NavLink to="/new-message">Ajouter un message</NavLink>
+        </Navbar.Item>
+      </Navbar.Brand>
+    </Navbar>
   );
 };
 

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 const axios = require("axios");
 
 const MessagesList = () => {
-  const [messagesList, setMessagesList] = useState([]);
+  const [msgList, setMsgList] = useState([]);
 
   const getMessages = () =>
-    axios.get("/messages.json").then((res) => setMessagesList(res.data));
+    axios.get("/messages.json").then((res) => setMsgList(res.data));
 
   useEffect(() => {
     getMessages();
@@ -13,10 +13,8 @@ const MessagesList = () => {
 
   return (
     <section>
-      {messagesList.length &&
-        messagesList.map((msg) => (
-          <article key={msg.id}>{msg.content}</article>
-        ))}
+      {msgList.length &&
+        msgList.map((msg) => <article key={msg.id}>{msg.content}</article>)}
     </section>
   );
 };
