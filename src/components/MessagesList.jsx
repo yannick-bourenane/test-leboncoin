@@ -1,21 +1,29 @@
-import React, { useEffect, useState } from "react";
-const axios = require("axios");
+import React from "react";
+import Moment from "react-moment";
+import "moment/locale/fr";
+import { Message } from "react-bulma-components";
 
-const MessagesList = () => {
-  const [msgList, setMsgList] = useState([]);
-
-  const getMessages = () =>
-    axios.get("/messages.json").then((res) => setMsgList(res.data));
-
-  useEffect(() => {
-    getMessages();
-  }, []);
-
+const MessagesList = ({ msgList }) => {
   return (
-    <section>
-      {msgList.length &&
-        msgList.map((msg) => <article key={msg.id}>{msg.content}</article>)}
-    </section>
+    <>
+      <section>
+        {msgList.length &&
+          msgList.map((msg) => (
+            <Message key={msg.id}>
+              <Message.Header>Message #{msg.id}</Message.Header>
+              <Message.Body>
+                {msg.isPrivate ? "Ce message est privé" : msg.content}
+                <p className="has-text-right">
+                  <i>
+                    <Moment fromNow date={msg.time} /> -{" "}
+                    <b>{msg.sender.name}</b>
+                  </i>
+                </p>
+              </Message.Body>
+            </Message>
+          ))}
+      </section>
+    </>
   );
 };
 

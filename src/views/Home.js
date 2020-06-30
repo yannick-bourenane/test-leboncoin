@@ -1,14 +1,16 @@
 import React from "react";
-import { Container, Section } from "react-bulma-components";
+import { Container, Section, Notification } from "react-bulma-components";
 import Header from "../components/partials/Header";
 import MessagesList from "../components/MessagesList";
-const Home = () => {
+
+const Home = ({ msgList, alert }) => {
   return (
     <>
       <Container>
         <Header />
         <Section>
-          <MessagesList />
+          {alert && <Notification>{alert}</Notification>}
+          <MessagesList msgList={msgList} />
         </Section>
       </Container>
     </>

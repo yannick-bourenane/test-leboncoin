@@ -4,12 +4,20 @@ import Home from "./views/Home";
 import NewMessage from "./views/NewMessage";
 import NotFound from "./views/NotFound";
 
-const Routes = () => {
+const Routes = ({ msgList, postMessages, alert }) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/new-message" component={NewMessage} />
+        <Route
+          exact
+          path="/"
+          render={() => <Home msgList={msgList} alert={alert} />}
+        />
+        <Route
+          exact
+          path="/new-message"
+          render={() => <NewMessage postMessages={postMessages} />}
+        />
         <Route path="*" component={NotFound} />
       </Switch>
     </BrowserRouter>
