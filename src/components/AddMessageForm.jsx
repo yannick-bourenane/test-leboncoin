@@ -32,7 +32,6 @@ const AddMessageForm = ({ postMessages }) => {
           <Link to="/" onClick={() => postMessages(msgObj)}>
             Envoyer
           </Link>
-          {/* <Button onClick={() => postMessages(msgObj)}>Envoyer</Button> */}
         </Form.Control>
       </Form.Field>
     </div>
