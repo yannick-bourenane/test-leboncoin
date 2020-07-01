@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.navbar-item a,
+.navbar-link a {
+    color: #4a4a4a
+}
+
+.navbar-item a.active button {
+    background-color: #ff6e14;
+    color: #FFF
+}
+
+.navbar-item a.active button:hover {
+    background-color: #C0562A;
+}
+
+.navbar-item a button svg,
+.navbar-item a button img {
+    margin-right: 10px;
+}
+
+.navbar-item a.active button svg,
+.navbar-item a.active button img {
+    fill: #FFF
+}
+
+.notification {
+    background-color: #336699;
+    color: #FFF;
+}

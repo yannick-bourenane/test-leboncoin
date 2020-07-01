@@ -1,6 +1,6 @@
 [{
     "id": 1,
-    "sender": {
+    "author": {
         "id": 1,
         "name": "John Doe"
     },
@@ -9,7 +9,7 @@
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue ipsum, pellentesque vitae arcu id, dapibus auctor nunc. Vestibulum sed lacinia elit. Curabitur viverra leo pharetra iaculis pharetra. Praesent nec facilisis lacus. Sed vestibulum ultrices ipsum, vitae ultrices lectus. Aenean sodales sodales nunc in vulputate. Mauris in urna mauris. In quis odio id risus interdum iaculis. Pellentesque lacinia, massa ut fermentum commodo, purus ante sollicitudin felis, eu semper massa sem ac sem. Integer nec iaculis enim. In maximus suscipit quam at sollicitudin. Donec rhoncus orci eros, nec mollis lorem pellentesque at. Sed ultrices, mauris et varius blandit, libero tellus placerat ante, vel efficitur sem risus a ipsum."
 }, {
     "id": 2,
-    "sender": {
+    "author": {
         "id": 1,
         "name": "John Doe"
     },
@@ -18,7 +18,7 @@
     "content": "Etiam consequat vehicula mattis. Duis libero risus, finibus vitae efficitur et, imperdiet non turpis. Sed feugiat libero a accumsan eleifend. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus mattis lorem eleifend orci ultrices hendrerit. Aliquam consectetur pretium enim quis eleifend. Nam ultricies lorem in ipsum tempus viverra."
 }, {
     "id": 3,
-    "sender": {
+    "author": {
         "id": 2,
         "name": "Jane Doe"
     },

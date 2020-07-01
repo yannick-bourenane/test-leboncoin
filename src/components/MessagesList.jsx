@@ -16,7 +16,7 @@ const MessagesList = ({ msgList }) => {
                 <p className="has-text-right">
                   <i>
                     <Moment fromNow date={msg.time} /> -{" "}
-                    <b>{msg.sender.name}</b>
+                    <b>{msg.author.name}</b>
                   </i>
                 </p>
               </Message.Body>

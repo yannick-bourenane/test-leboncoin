@@ -20,7 +20,7 @@ const App = () => {
       ...msgList,
       {
         id: msgList.length + 1,
-        sender: {
+        author: {
           id: 3,
           name: "Testeur",
         },
@@ -37,7 +37,6 @@ const App = () => {
 
   return (
     <Router history={browserHistory}>
-      {msgList.length && console.log(msgList)}
       <Routes msgList={msgList} alert={alert} postMessages={postMessages} />
     </Router>
   );

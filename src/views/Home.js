@@ -9,7 +9,11 @@ const Home = ({ msgList, alert }) => {
       <Container>
         <Header />
         <Section>
-          {alert && <Notification>{alert}</Notification>}
+          {alert && (
+            <Notification>
+              <strong>{alert}</strong>
+            </Notification>
+          )}
           <MessagesList msgList={msgList} />
         </Section>
       </Container>
