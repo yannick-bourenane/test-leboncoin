@@ -1,12 +1,24 @@
 Leboncoin test
 
-1. run `npm install` to install the dependencies
-
-2. run `npm start` to run the app
-
 ---
 
-Useful Links :
+# How to download this project ?
+
+To get this project go ahead and write \$git clone https://github.com/yannick-bourenane/test-leboncoin on your terminal, press enter and you should be good to go !
+
+## Features
+
+- A list of messages
+- A form to post a new message. It can be public or private
+
+## Installation
+
+How to run this project ?
+
+- 1 : Once you are in test-leboncoin folder, run \$npm install
+- 2 : run \$npm start to launch the app
+
+## Support
 
 CSS framework
 Bulma : https://www.npmjs.com/package/react-bulma-components
